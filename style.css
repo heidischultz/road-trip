@@ -184,6 +184,20 @@ aside{
   object-position: center 30%;
 }
 
+.disco * {
+  transition: all 0.2s ease;
+  filter: saturate(150%) contrast(120%);
+}
+
+body.disco::before {
+  content: "";
+  position: fixed;
+  inset: 0;               
+  background: var(--discoColor, hotpink);
+  opacity: 0.35;            
+  pointer-events: none;
+  z-index: 999999;         
+}
 footer {
   background-color: #165513;
   width: 100%;
