@@ -6,7 +6,7 @@ discoBtn.addEventListener("click", () => {
 
   if (discoInterval === null) {
     discoBtn.textContent = "Stop Partying";
-
+    //picks random color and flashes it every 200 ms
     discoInterval = setInterval(() => {
       const randomColor = `hsl(${Math.random() * 360}, 100%, 45%)`;
       document.body.style.setProperty("--discoColor", randomColor);

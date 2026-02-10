@@ -60,6 +60,7 @@ nav{
 main{
   display:flex;
   gap:3rem;
+  margin:0 auto;
   padding: 1rem; 
   flex:1;
   flex-wrap:wrap;
@@ -140,8 +141,10 @@ aside{
 .destinations-list {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  max-width: 700px;
+  align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -166,7 +169,7 @@ aside{
 .destinations-list li {
   position: relative;
   width: 100%;
-  height: 150px;         
+  height: 190px;         
   border-radius: 24px;
   overflow: hidden;
   list-style: none;
@@ -198,6 +201,8 @@ body.disco::before {
   pointer-events: none;
   z-index: 999999;         
 }
+
+
 footer {
   background-color: #165513;
   width: 100%;
