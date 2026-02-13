@@ -314,6 +314,7 @@ body.disco::before {
   font-size: 4.0rem;
   text-shadow: 0 6px 20px rgba(0,0,0,0.6);
   pointer-events: none;
+  
 }
 
 .stop-pill{
@@ -343,6 +344,65 @@ body.disco::before {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.packing-main{
+  display: block;
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.packing-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.packing-card,
+.packing-note{
+  background: rgba(255,255,255,0.18);
+  border: 3px solid rgba(22, 85, 19, 0.25);
+  border-radius: 22px;
+  padding: 1.25rem 1.25rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.packing-title{
+  margin: 0 0 0.75rem;
+  letter-spacing: 1px;
+}
+
+.packing-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.packing-list label{
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+.packing-list input[type="checkbox"]{
+  transform: translateY(2px);
+}
+
+.packing-list input[type="checkbox"] {
+  accent-color: #165513;
+  width: 18px;
+  height: 18px;
+}
+
+.packing-list label:has(input:checked) {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+
 
 footer {
   background-color: #165513;
