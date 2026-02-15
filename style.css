@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   overflow-x: hidden;
@@ -504,9 +507,6 @@ footer {
 /* mobile */
 
 @media (max-width: 700px) {
-  * {
-  box-sizing: border-box;
-  }
 
   main,.song-section, section, header, footer {
     max-width: 100%;
@@ -581,21 +581,21 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 40vh);
   height: auto;
-}
+  }
 
-.stops-hero-destination {
-  height: 40vh;
-}
+  .stops-hero-destination {
+    height: 40vh;
+  }
 
-.stop-pill {
-  font-size: 1.2rem;
-  padding: 0.6rem 0.9rem;
-}
+  .stop-pill {
+    font-size: 1.2rem;
+    padding: 0.6rem 0.9rem;
+  }
 
-.stops-hero-title {
-  font-size: 2.2rem;
-  margin-top: 4rem;
-}
+  .stops-hero-title {
+    font-size: 2.2rem;
+    margin-top: 4rem;
+  }
   .stop-pictures{
     flex-direction: column;
   }
@@ -603,37 +603,38 @@ footer {
   .stop-pictures img{
     width: 100%;
   }
+
   .song-section{
   overflow-x: visible;
-}
+  }
 
-.song-table{
-  min-width: 0;
-  table-layout: fixed;   
-}
-.song-table,td,th{
-  overflow-wrap: anywhere;
-}
+  .song-table{
+    min-width: 0;
+    table-layout: fixed;   
+  }
+  .song-table,td,th{
+    overflow-wrap: anywhere;
+  }
 
-audio{
-  width: 180px;
-}
-.squad{
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
+  audio{
+    width: 180px;
+  } 
+  .squad{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 
-.squad figure{
-  width: 100%;
-  max-width: 420px;
-  padding: 1.5rem;
-}
+  .squad figure{
+    width: 100%;
+    max-width: 420px;
+    padding: 1.5rem;
+  }
 
-.squad figure img{
-  width: 100%;
-  height: auto;
-}
+  .squad figure img{
+    width: 100%;
+    height: auto;
+  }
 
 }
 
